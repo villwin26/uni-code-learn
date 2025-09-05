@@ -43,53 +43,9 @@ const Index = () => {
     );
   }
 
-  return (
-    <MainLayout>
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4">Welcome back!</h1>
-            <p className="text-xl text-muted-foreground">Continue your programming journey</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="lesson-card">
-              <CardHeader>
-                <BookOpen className="h-12 w-12 text-primary mb-4" />
-                <CardTitle>Python Course</CardTitle>
-                <CardDescription>Learn Python from basics to advanced</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full">Continue Learning</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="lesson-card">
-              <CardHeader>
-                <Code className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>JavaScript Course</CardTitle>
-                <CardDescription>Master modern JavaScript development</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full">Start Course</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="lesson-card">
-              <CardHeader>
-                <TrendingUp className="h-12 w-12 text-info mb-4" />
-                <CardTitle>Your Progress</CardTitle>
-                <CardDescription>Track your learning journey</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full" variant="outline">View Progress</Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </MainLayout>
-  );
+  // Redirect authenticated users to dashboard
+  navigate('/dashboard');
+  return null;
 };
 
 export default Index;
